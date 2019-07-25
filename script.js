@@ -85,6 +85,17 @@ let students = [
         hasSchoolBefore: true
     }
 ];
+//Q1
+// for (let i = 0; i < students.length; i++) {
+//     console.log("Name: " + students[i].name);
+
+//     console.log("Gender: " + students[i].gender);
+
+//     console.log("City: " + students[i].address.city);
+//     console.log("Score: " + students[i].admissionTestScore + "marks");
+//     console.log("");
+// }
+
 //Q2
 //   console.log(student.name[0]);
 //   
@@ -93,37 +104,70 @@ let students = [
 //         console.log(students[i].name);
 //     }
 // }
-// 
-//Q6
+
+//Q3
+// for (let i = 0; i < students.length; i++) {
+//     if (students[i].gender === "m") {
+//         console.log(students[i].name);
+//     }
+// }
+
+//Q4
+// for (let i = 0; i < students.length; i++) {
+//     if (students[i].admissionTestScore >= 50) {
+//         console.log(students[i].name);
+//     }
+// }
+
+//Q5
 // for (let i = 0; i < students.length; i++) {
 //     if (students[i].hasInternet === true && students[i].address.city === "Karachi") {
 //         console.log(students[i].name);
 //     }
 // }
+//Q6
+// for (let i = 0; i < students.length; i++) {
+//         console.log(students[i].name + "'s address: " + students[i].address.ilaqa + " in "  + students[i].address.city + "," + students[i].address.country);    
+// }
+
 //Q7
 // for (let i = 0; i < students.length; i++) {
-//         console.log(students[i].name + "'s address is " + students[i].address.ilaqa + " in "  + students[i].address.city + "," + students[i].address.country);    
+//     if (students[i].phoneNo.charAt(2) === "3" && students[i].phoneNo < "8") {
+//         console.log(students[i].name + ":" + students[i].phoneNo);
+//     }
 // }
-//Q8]
-let groupA=[];
-let groupB=[];
 
-for (let i = 0; i < students.length; i++) {
-    if (students[i].hasJob == true || students[i].hasSchoolBefore == true) {
-        groupB.push(students[i].name);
-    } else {
-        groupA.push(students[i].name);
-        
-    }
-}
-console.log("Groub B : " + groupB);
-console.log("Groub A : " + groupA);
+//Q8
+// let groupA=[];
+// let groupB=[];
+
+// for (let i = 0; i < students.length; i++) {
+//     if (students[i].hasJob == true || students[i].hasSchoolBefore == true) {
+//         groupB.push(students[i].name);   
+//     } else {
+//         groupA.push(students[i].name);
+
+//     }
 // }
+// console.log("Groub B : " + groupB);
+// console.log("Groub A : " + groupA);
+
 //Q9
 // for (let i = 0; i < students.length; i++) {
-    // console.log(students[i].name +
-    //      "'s age is " + students[i].dob + " years");
-    // }
+//     let dob = students[i].dob;
+//     let today = new Date();
+//     let diffYear = today.getFullYear() - dob.getFullYear();
+//     console.log(students[i].name + "'s age is " + diffYear + " years");
+// }
+
+//Q10
+// for (let i = 0; i < students.length; i++) {
+//     if () {
+//         console.log(students[i].name)
+//     }
+
+
+// ye question karnA HAI }
 
 
 
