@@ -152,22 +152,47 @@ let students = [
 // console.log("Groub B : " + groupB);
 // console.log("Groub A : " + groupA);
 
+// function bnaya hai taky repeation na ho coding ki.
+function calculateAge(dateOfBirth) {
+    for (let i = 0; i < students.length; i++) {
+
+        let dobYear = students[i].dob.getFullYear();
+        let todayYear = new Date().getFullYear();
+        let age = todayYear - dobYear;
+
+
+        let dobMonth = students[i].dob.getMonth();
+        let todayMonth = new Date().getMonth();
+        if (todayMonth < dobMonth) {
+            age--;
+        } else if (todayMonth === dobMonth) {
+            let todayDate = new Date().getDate();
+            let dobDate = students[i].dob.getDate();
+            if (todayDate < dobDate) {
+                age--;
+            }
+        }
+        console.log(`${students[i].name}'s age is ${age}  year`);
+    }
+}
 //Q9
-// for (let i = 0; i < students.length; i++) {
-//     let dob = students[i].dob;
-//     let today = new Date();
-//     let diffYear = today.getFullYear() - dob.getFullYear();
-//     console.log(students[i].name + "'s age is " + diffYear + " years");
-// }
+for (let i = 0; i < students.length; i++) {
+    let age = calculateAge(students[i].dob);
+}
+console.log(`${students[i].name}'s age is ${age}  year`);
+
 
 //Q10
-// for (let i = 0; i < students.length; i++) {
-//     if () {
-//         console.log(students[i].name)
+//this method uses in to dermine the highest tempr and length etc.
+
+// let oldestStudents = students[0];
+
+// for (let i = 1; i < students.length; i++) {
+
+//     if (students[i].age > oldestStudents.age) {
+//         oldestStudents = students[i];
 //     }
-
-
-// ye question karnA HAI }
-
+// }
+// console.log(oldestStudents.name);
 
 
